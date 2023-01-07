@@ -4,7 +4,7 @@ const regexp = /javascript/ig;
 
 let result;
 
-while ((result = regexp.exec(str))) {
+while ((result = regexp.exec(str))) { //! lastIndex will be change, and new iteration will be start at new lastIndex
     console.log( `Found ${result[0]} on position ${result.index}` );
 }
 //! manage last index('start index for exec()')
